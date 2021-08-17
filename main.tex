@@ -1,0 +1,71 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage[left=3cm, top=3cm, right=2cm, bottom=2cm]{geometry}
+\usepackage[brazil]{babel}
+
+%Isto é um Comentário
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{physics}
+
+\title{\huge{Meu Primeiro documento em \LaTeX}}
+\author{Victor S. Nunes \footnote{Bach. Física - UFS}}
+\date{Ago/2021}
+
+\begin{document}
+    \maketitle
+    
+    \abstract{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut tellus vel massa ultrices auctor. Fusce luctus augue enim, ut tristique lectus lacinia elementum. Ut aliquet vulputate fringilla. Nulla facilisi. In efficitur viverra urna, ac tristique nulla malesuada in. Donec rhoncus aliquam bibendum. Phasellus ac tortor ac risus vestibulum molestie. Etiam varius laoreet enim, non rutrum nulla lacinia vitae. Praesent sodales mi ut sodales molestie. Integer vel lacinia erat, ut efficitur massa. Sed semper ante vel odio iaculis faucibus. Integer rhoncus augue sed mauris venenatis, quis auctor sapien blandit. Maecenas erat est, porttitor ac auctor non, suscipit eu lacus. Curabitur ullamcorper mi aliquet congue porta.}
+    
+    \hrulefill %Comando para colocar uma linha
+    
+    \begin{multicols}{2}
+        \section{Introdução}
+        Proin rutrum ut augue eget laoreet. Cras lobortis ullamcorper ex,     ornare luctus dolor viverra eget. In tortor ante, porttitor a quam     vitae, elementum facilisis leo. Sed a finibus elit \cite{moyses}. Pellentesque non     gravida metus. Donec suscipit interdum turpis vel dictum. Pellentesque     non gravida metus. Donec suscipit interdum turpis vel dictum.     Pellentesque porttitor semper dolor vel egestas. Fusce quis urna     venenatis augue consectetur molestie.
+    
+        \begin{quote}
+            Aliquam id scelerisque arcu. Praesent dignissim scelerisque purus a     porttitor. Aenean in tortor rhoncus, rutrum est sit amet, mattis     dui. Nulla facilisi. Etiam posuere eu tortor sit amet elementum. \footnote{Cervantes}
+        \end{quote}
+        
+        Fusce in dignissim justo, vel pharetra nibh. Mauris sollicitudin leo quis congue accumsan. Aliquam fermentum neque sed lacus rutrum rhoncus venenatis id orci. 
+        
+        \section{Objetivos}
+        \subsection{Objetivos Gerais}
+        
+            \begin{itemize}
+                \item Primeiro Objetivo
+                \item Segundo Objetivo
+                \item Terceiro Objetivo
+            \end{itemize}
+        
+        \subsection{Objetivos Específicos}
+        
+            \begin{enumerate}
+                \item Primeiro Objetivo Específico
+                \item Segundo Objetivo Específico
+                \item Terceiro Objetivo Específico
+            \end{enumerate}
+        
+        \section{Metodologia}
+        %o \noindent é para não identar a primeira linha desse parágrafo
+        \noindent Nunc eros nisi, ultricies sit amet sagittis nec, sollicitudin in mi. Curabitur posuere odio ac hendrerit viverra. Pellentesque vulputate diam ut arcu tempor pharetra. Morbi lacinia vitae dolor ut vestibulum. Suspendisse congue lectus id vehicula euismod. Sed aliquet aliquet odio vel viverra. Quisque vitae lobortis augue. Phasellus posuere posuere velit, vel fringilla lectus sollicitudin et. Fusce feugiat vehicula mi, at pretium arcu elementum vitae. Phasellus vel ex diam.
+        
+        \section{Análise}
+        Vestibulum posuere metus est, non sagittis augue pharetra ac. Sed quis nisl ante. Duis lacinia urna ligula, ut egestas quam viverra id. Nam ullamcorper, sem nec pharetra gravida, elit massa fermentum leo, in scelerisque eros eros non odio. Pellentesque turpis nibh, ornare in turpis eu, sodales vestibulum risus.
+        
+        $$
+            \vec{\nabla} \times \vec{F} = 0
+        $$
+        
+        \section{Conclusão}
+         Aliquam volutpat suscipit risus, vel accumsan eros bibendum vitae. Nullam pretium, elit sed posuere venenatis, ex diam bibendum orci, et egestas tellus tellus sit amet ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel sollicitudin odio. In vulputate urna sit amet est sodales semper. Donec interdum tempor lorem vehicula laoreet.
+    \end{multicols}
+    
+    \nocite{jackson1999classical}
+    \nocite{sakurai2021modern}
+    
+    \bibliographystyle{apalike}
+    \bibliography{refs}
+    
+\end{document}
